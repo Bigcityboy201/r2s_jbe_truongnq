@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Nguyên nhân gây ra conflict:
+        +giả sử có 3 phần 1 là dev1 phần 2 là trung tâm github có 1 file.txt phần 3 là dev2 
+        +dev1 và dev2 git clone và dev1 sửa file.txt trước và push lên github
+        +dev2 cũng git clone về nhưng không có phiên bản sửa của dev1 và đã chỉnh sửa sau đó push lên github
+        +như vậy đã gây ra conflict
+        Giải pháp:
+        Cách 1:
+        +dev1 git clone về chỉnh sửa và push lên github
+        +dev2 cũng git clone về nhưng git pull lại code sẽ tránh gây xung đột 
+        Cách 2: 
+        +dev2 git pull và gặp lỗi conflict(lúc này là dev2 đã sửa rồi)
+        +dev2:vào file txt sửa những nội dung phù hơp và xóa kí hiệu conflict
+        +sau đó push len github
+        </p>
+</body>
+</html>
